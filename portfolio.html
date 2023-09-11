@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+    Personal Porfolio
+    Author: Ildar Beisenbayev
+     
+
+    Filename: portfolio.html
+   --> 
+   <title>Personal Portfolio</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href = "reset.css" rel="stylesheet"/>
+   <link href = "portfolio.css" rel="stylesheet"/>  
+   <link href = "services.html" rel="stylesheet"/>
+   <link href = "resume.html" rel="stylesheet"/>
+   <link href = "cv.html" rel = "stylesheet" />
+</head>
+<header id="home"> </header>
+
+<header>
+    <h2>Personal Portfolio</h2>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <div class="header-icons">
+    <i class="fa fa-bars" id="sidenav-icon"></i>
+    <div class="navigation-links">
+      <a onclick="scrollToProjects()">Projects</a>
+      <a onclick="scrollToSkills()">My Skills</a>
+      <a onclick="scrollToAboutMe()">About Me</a>
+      <a onclick="scrollToContactForm()">Contact</a>
+    </div>
+  </div>
+  </header>
+  
+<div class = photo> </div>
+  
+<div class="portfolio-container">
+  <div class="intro">
+    <h1>Hello,my<tb> name is <br><br> </h1>
+   <h2>Ildar Beisenbayev</h2>
+    <h3>Full Stack Software Developer</h3>
+    <h4>I am actively seeking new opportunities and I would be thrilled to collaborate with you on your next project. As a passionate and dedicated Full Stack Developer, I bring a strong skill set, a drive for excellence,
+        and a commitment to delivering outstanding results.</h4>
+    <div class="buttons">
+      <button onclick="openCV()">CV</button>
+      <button onclick="window.open('resume.html')">Resume</button>
+      <button onclick="scrollToContactForm()">Hire Me</button>
+    </div>
+    <div class="icons">
+      <a onclick="openLinkedin()" class="icon-linkedin"></a>
+      <a onclick="openGitHub2()" class="icon-instagram"></a>
+      <a onclick="openIndeed()" class="icon-github"></a>
+      <a onclick="openInstagram()" class="icon-indeed"></a>
+    </div> 
+  </div>
+  
+  <div class="photo">
+    <img src="300.png" alt="Profile Photo" class="profile-image">
+  </div>
+</div>
+
+<div class = AfterText>
+	<p>I'm a highly skilled and passionate full-stack software <br /><br />developer.<br /><br />
+	   I have several years of experience in the field,<br /> <br />  and I'm constantly seeking<br /><br /> new challenges
+	   and opportunities to expand my knowledge. </p>
+</div>
+	
+	<!--PROJECTS -->
+<div class="deals" id="projects">
+<p> Projects </p>
+       <button class="project-button" onclick="openGitHub()">GitHub</button>
+</div>
+
+<div class="container">
+	<div class="cont">
+		<img src="chaky.png" alt="" class="project-image" onclick="openGitHub(' https://ildaubica.github.io/HondaAutoDealership_.github.io/')">
+			<div class="overlay">Honda Auto Dealership(HTML, CSS, JS)</div>
+</div>
+	
+	<div class="cont">
+		<img src="coolmat_logo.png" alt="" class="project-image" onclick="openServicesPage()">	
+			<div class="overlay">WORDPRESS Korean Cafe(Front-End/Back-End)</div>
+	</div>
+
+	<div class="cont">
+	<img src="3.png" alt="" class="project-image" onclick="openGitHub('https://github.com//ildaubica/HondaAutoDealership_.github.io')">
+	<div class="overlay">Android Studio Project</div>
+	</div>
+	
+	<div class="cont">
+	<img src="3.png" alt="" class="project-image" onclick="openGitHub('https://github.com//ildaubica/HondaAutoDealership_.github.io')">
+	<div class="overlay">Java Project</div>
+	</div>
+</div>
+</div>
+
+<div class="MySkills" id="skills">
+  <h1>My Skills</h1>
+</div>
+
+<div class="MySkills2">
+  <h2>Here are the lists of languages and tools I've worked with</h2>
+</div>
+
+<div class="skills-container">
+ 
+<!-- HTML code for skills section -->
+<div id="skills-section" class="SkillsSection">
+  <h2>Technical Skills</h2>
+  <ul id="technical-skills"></ul>
+
+  <h2>Other Skills</h2>
+  <ul id="other-skills"></ul>
+
+  <h2>Tools</h2>
+  <ul id="tools"></ul>
+</div>
+
+<!-- CSS code -->
+<style>
+  #skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 50px;
+    margin-left: 250px;
+    
+  }
+
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+  }
+
+  li {
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px; /* Updated to square border */
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+ 
+  li:nth-of-type(1){
+  	background-color: green;
+  	}
+  li:nth-of-type(2){
+  	background-color: #FFBC42;
+  	}
+  	li:nth-of-type(3){
+  	background-color: #8F2D56;
+  	}
+  	li:nth-of-type(4){
+  	background-color: #218380;
+  	}
+  	li:nth-of-type(5){
+  	background-color: #73D2DE;
+  	}
+  	li:nth-of-type(6){
+  	background-color: #F2B5D4;
+  	}
+  	li:nth-of-type(7){
+  	background-color: #AFFC41;
+  	}
+  	li:nth-of-type(8){
+  	background-color: #3C1642;
+  	}
+  	li:nth-of-type(9){
+  	background-color: #7F5539;
+  	}
+  	
+
+  li:hover {
+    background-color: #e0e0e0;
+  }
+</style>
+
+<!-- JavaScript code -->
+<script>
+  // Define your skills and tools
+  const technicalSkills = ["Java", "HTML", "CSS", "JavaScript", "SQL", "Node.js", "Python", "React", "Angular", "Android Studio"];
+  const otherSkills = ["Problem Solving", "Communication", "Time Management", "Teamwork", "Fast-Learner", "Work ", "Responsible"];
+  const tools = ["Git", "Visual Studio Code", "Sublime Text", "Postman", "Webpack"];
+
+  // Function to create list items
+  function createListItem(text) {
+    const li = document.createElement("li");
+    li.textContent = text;
+    return li;
+  }
+
+  // Populate technical skills
+  const technicalSkillsList = document.getElementById("technical-skills");
+  technicalSkills.forEach(skill => {
+    const li = createListItem(skill);
+    technicalSkillsList.appendChild(li);
+  });
+
+  // Populate other skills
+  const otherSkillsList = document.getElementById("other-skills");
+  otherSkills.forEach(skill => {
+    const li = createListItem(skill);
+    otherSkillsList.appendChild(li);
+  });
+
+  // Populate tools
+  const toolsList = document.getElementById("tools");
+  tools.forEach(tool => {
+    const li = createListItem(tool);
+    toolsList.appendChild(li);
+  });
+</script>
+
+</div>
+
+
+  <div class = "AboutMe" id="about">
+  <h1>About Me</h1>
+  <article> 
+  <p>I'm <strong>Ildar Beisenbayev</strong>, a passionate full stack software developer from <strong>Kamloops, Canada.</strong> </p>
+    
+    <p>Currently, I am in the final stages of completing my <strong>Bachelor of Computing Science</strong> degree at Thompson Rivers University.</p>
+    
+    <p>With my expertise as a full stack software developer, I possess a comprehensive understanding of both <strong>frontend and backend development.</strong></p>
+    
+    <p>Proficient in languages like Java and JavaScript, I am well-versed in leveraging these tools to create dynamic and intuitive web applications. </p>
+    
+    <p>From crafting seamless user interfaces using <strong>HTML, CSS, and JavaScript frameworks</strong> to designing and implementing efficient server-side components, I thrive in bridging the gap between client and server.</p>
+    
+    <p><strong>Thank you for taking the time to get to know me. I look forward to connecting with fellow professionals, exploring new opportunities, and contributing to the ever-evolving world of software development.</strong></p> </article>
+  </div>
+  
+
+  
+<div id="contact" class="containerFORM">
+    <div class="form-container">
+      <h2>Contact Form</h2>
+      <form>
+      
+       <form action="contact.php" method="POST">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    
+    <div class="social-icons">
+  <a href="https://www.linkedin.com/in/ildar-beisenbayev-9862191a1/" target="_blank"><img src="200.png" alt="LinkedIn" class="social-icon"></a>
+  <a href="mailto:your-email@example.com"><img src="100.png" alt="Gmail" class="social-icon"></a>
+</div>
+
+
+  </div>
+ 
+
+
+<div class="footer">
+<h1>Let's Connect and Work Together</h1>
+<h2> Made by  Ildar Beisenbayev via using HTML, CSS, JS.</h2>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#home">HOME</a></li>
+        <li><a onclick="scrollToProjects()">PROJECTS</li>
+        <li><a onclick="scrollToSkills()">SKILLS</a></li>
+        <li> <a onclick="scrollToAboutMe()">ABOUT ME</a> </li>
+        <li> <a onclick="scrollToContactForm()">CONTACT</a> </li>
+      </ul>
+    </nav>
+    
+    <div class="icons">
+      <a onclick="openLinkedin()" class="icon-linkedin"></a>
+      <a onclick="openGitHub2()" class="icon-instagram"></a>
+      <a onclick="openIndeed()" class="icon-github"></a>
+      <a onclick="openInstagram()" class="icon-indeed"></a>
+    </div>
+  
+</div>
+
+
+
+
+<script>
+  function openGitHub() {
+    window.open("https://github.com/ildaubica/HondaAutoDealership_.github.io", "_blank");
+  }
+  
+  function openGitHub2(){
+  	 window.open("https://github.com/ildaubica");
+  }
+  
+  function openInstagram() {
+    window.open("https://www.instagram.com/accounts/login/?next=%2Fyour-instagram%2F&source=desktop_nav", "_blank");
+  }
+  
+  function openIndeed() {
+    window.open("https://profile.indeed.com/?hl=en_CA&co=CA&from=gnav-homepage&_ga=2.216865750.1974756044.1688071105-220682204.1686516190", "_blank");
+  }
+  
+  function openLinkedin() {
+    window.open("https://www.linkedin.com/in/ildar-beisenbayev-9862191a1/", "_blank");
+  }
+  
+  function openCV() {
+    window.open("cv.html", "_blank");
+  }
+  
+  // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+function scrollToAboutMe() {
+      var aboutMeSection = document.querySelector(".AboutMe");
+      aboutMeSection.scrollIntoView({ behavior: 'smooth' });
+    }
+function scrollToProjects() {
+      var Section = document.querySelector(".deals");
+      Section.scrollIntoView({ behavior: 'smooth' });
+    }
+  
+  function scrollToContactForm() {
+  var contactFormSection = document.querySelector("#contact");
+  contactFormSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Add an event listener to the "Home" link
+document.querySelector('a[href="#home"]').addEventListener('click', scrollToTop);
+
+function scrollToTop2() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Add an event listener to the "Home" link
+document.querySelector('a[href="#skills"]').addEventListener('click', scrollToTop2);
+
+function scrollToTop3() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Add an event listener to the "Home" link
+document.querySelector('a[href="#about"]').addEventListener('click', scrollToTop3);
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+  
+  function openServicesPage() {
+        window.location.href = "services.html";
+    }
+    
+function scrollToSkills() {
+    var skillsSection = document.querySelector("#skills");
+    skillsSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+function scrollToProjects() {
+    var skillsSection = document.querySelector("#projects");
+    skillsSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+</script>
+
+
+
+
+</body>
+</html>

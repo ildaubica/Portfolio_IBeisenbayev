@@ -1,0 +1,683 @@
+@charset "utf-8";
+/*HEADER*/
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #010228;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive;
+  height: 90px;
+  font-size: 20px;  
+  color: white;
+}
+
+header h2 {
+	margin-top: 10px;
+	color: #C1E1EB;
+}
+
+.header-icons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-links a {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.navigation-links a:hover {
+  color: #7F5539;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  margin-top: 25px;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #4c86a8;
+  width: 0%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   
+  }
+
+/*HEADER*/
+  .portfolio-container {
+    background-color: #00253D;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin-top: -225px;
+    position: relative;
+  }
+  
+  .icons {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column; /* Display icons vertically */
+  align-items: center; /* Center align the icons horizontally */
+  margin-bottom: 200px;
+}
+
+.icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px; /* Add some margin between icons */
+  background-color: #fff;
+  border-radius: 50%;
+}
+.icons a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  bottom: -1px; /* Position the line just below the icon */
+  left: 0;
+}
+
+/* Rest of the CSS code for the icons */
+
+
+.icon-linkedin {
+  background-image: url("200.png");
+  background-size: cover;
+}
+
+.icon-instagram {
+   background-image: url("201.png");
+   background-size: cover;
+}
+
+.icon-github {
+   background-image: url("202.png");
+   background-size: cover;
+}
+
+.icon-indeed {
+   background-image: url("204.png");
+   background-size: cover;
+}
+
+  .intro {
+    flex: 1;
+    padding: 40px;
+    color: #333;
+    margin-top: -100px;
+  }
+
+  .intro h1,
+  .intro h2,
+  .intro h3,
+  .intro h4 {
+    margin-left: 350px;
+    line-height: 1.2;
+    color: #83C5BE;
+  }
+  .intro h1{
+  	margin-top:25px;
+  	}
+  	  
+  .intro h2{
+  	color: #C1E1EB;
+  	font-size: 3.4em;
+  	}
+  	
+  .intro h3{
+  	color: #848A9A;
+  	font-size: 3em;
+  	font-family: sans-serif;
+  	 }
+  	
+  .intro h4{
+  	color: #848A9A;
+  	margin-top:25px;
+  	font-family: sans-serif;
+  	line-height: 1.7;
+  	}
+  	
+  .buttons {
+    margin-top: 20px;
+    margin-left: 350px;
+  }
+
+  .buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-family: Verdana;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #4c86a8;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .buttons button:hover {
+    background-color: #306d8c;
+    color: #fff;
+  }
+
+ .photo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 40px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 4px dotted #000;
+  border-radius: 50%;
+}
+
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /*Text that appears after class portfolio-container*/
+   .AfterText {
+     background-color: #00253D;
+      padding: 50px;
+      float: left;
+      margin-top: 150px;
+      margin-bottom: 150px;
+      margin-left: 100px;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .AfterText p {
+      font-size: 20px;
+      line-height: 1.5;
+      color: white;
+      margin-bottom: 20px;
+    }
+        
+   /* deals styles */
+.deals {
+      clear: left;
+      background-color: white;
+      margin-right: 150px;
+      margin-left: 150px;
+      margin-bottom: 75px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+.deals p {
+	font-size: 2em;
+	font-family: sans-serif;
+	color: #00253D;
+	}
+
+    .container {
+      background-color: #00253D;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: 100px;
+      margin-left: 130px;
+    }
+    
+    /* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.cont:hover .overlay {
+  opacity: 1;
+}
+
+    .cont {
+      width: 300px;
+      margin: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .cont p {
+      color: black;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .cont img {
+      display: block;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-button {
+      background-color: black;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      margin: 0 auto;
+      font-size: 16px;
+      margin-top: 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .project-button:hover {
+      background-color: #333;
+    }
+    
+    .project-image:hover {
+    opacity: 0.7;
+    cursor: pointer;
+	}
+	
+.MySkills {
+  margin-top: 150px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.MySkills h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.MySkills2 {
+  margin-top: 45px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.MySkills2 h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 90px;
+  margin-left: 120px;
+  background-color:  #00253D;
+}
+
+.skill-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-list.left,
+.skill-list.right {
+  width: 200px;
+}
+
+.skill-list.main {
+  width: 300px;
+}
+
+.skill-list li {
+  background-color: #4c86a8;
+  color: white;
+  padding: 15px 25px;
+  margin: 10px;
+  margin-left: 200px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.skill-list li:hover {
+  background-color: #306d8c;
+  transform: scale(1.05);
+}
+
+.list-container {
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+.list-title {
+  font-size: 20px;
+  color: #333;
+  margin-left: 150px;
+}
+
+#skills-section {
+  margin-top: 150px;
+  
+}
+
+#skills-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase; 
+}
+
+.SkillsSection {
+	border-radius: 5px;
+    border:5px solid black;
+    background: linear-gradient(45deg, #00253D, #8F2D56, #FFBC42);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    }
+    
+    
+#skills-section h2:first-of-type {
+  font-size: 24px;
+  color: #33FFC5;
+  margin-bottom: 30px;
+}
+
+#skills-section h2:nth-of-type(2) {
+  font-size: 24px;
+  color: #ABC9ED;
+  margin-bottom: 30px;
+}
+
+#skills-section h2:nth-of-type(3) {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left:200px; 
+  margin-right: 200px;
+}
+
+.AboutMe {
+  margin-top: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 150px;
+  border-radius: 20px;
+  background-color: #00253D;
+  padding: 50px;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  
+}
+
+.AboutMe h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #FFD700; /* Golden yellow */
+}
+
+.AboutMe p {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: white;
+  line-height: 2;
+}
+
+.AboutMe strong{
+	font-size: 1.3em;
+	color: yellow;
+	}
+
+.AboutMe p:first-child {
+  margin-top: 0;
+}
+
+.AboutMe p:last-child {
+  margin-bottom: 0;
+}
+
+    
+.containerFORM {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 800px;
+      width: 100%;
+      margin-left: 220px;
+    }
+    
+    .form-container {
+      flex-basis: 60%;
+      padding: 40px;
+    }
+    
+    .form-container h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    .form-container input,
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      border: none;
+      border-radius: 5px;
+      color: #333;
+    }
+    
+    .form-container textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    
+    .form-container button {
+      background-color: #ff6b6b;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .form-container button:hover {
+      background-color: #e64c4c;
+    }
+    
+   .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #4CAF50;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+}
+
+
+.footer {
+  display: flex;
+  background-color: #00253D;
+  color: white;
+  padding: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+}
+
+.footer h2 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 255px;
+  margin-right: 450px;
+  color: #C1E1EB;
+  margin-left: 200px;
+}
+
+.navigation li {
+  margin: 10px;
+  display: block;
+  margin-top: -200px;
+  margin-bottom: 200px;
+  margin-left: 100px; 
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: block; 
+  text-align: center; 
+}
+
+.navigation li a:hover {
+  color: gold;
+}
+
+.footer {
+  position: relative; 
+}
+
+footer .icon-linkedin:before {
+  content: "LinkedIn";  
+}
+
+footer .icon-instagram:before {
+  content: "Instagram";
+}
+
+footer .icon-github:before {
+  content: "GitHub";
+}
+
+footer .icon-indeed:before {
+  content: "Indeed";
+}
+
+    /* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+@keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+
+  
+
